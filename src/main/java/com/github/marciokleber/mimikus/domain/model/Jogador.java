@@ -25,7 +25,7 @@ public class Jogador {
     @Comment("Campo para o armazenamento do nome do jogador")
     private String nome;
 
-    @Column()
+    @Column
     @Comment("Campo para o armazenamento do apelido do jogador")
     private String nickname;
 
