@@ -2,7 +2,21 @@ server:
     port: 8080
     servlet:
         context-path: /mimukus
+
 spring:
     application:
         name: mimikus
 
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/mimikus
+        username: mimikus
+        password: mimikus
+    jpa:
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
